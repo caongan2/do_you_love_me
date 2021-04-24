@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title><img src="image/image.jpg" height="1080" width="1920"/>
+    <link rel="stylesheet" href="cs.css">
+</head>
+<body>
+<form>
+    <h1 style="position: absolute; left:300px; top:235px; background-color: chartreuse">Do You Love Me?</h1>
+    <input type="button" value=" Yes " onclick="yesClick()" style="position: absolute; left:365px; top:305px">
+    <input type="button" value=" No " onmouseover="noHover()" id="btNo" style="position: absolute; left:415px; top:305px">
+</form>
+<script>
+    function yesClick() {
+        alert("ok bây bê, me too!!!")
+    }
+    function noHover() {
+        let x = Math.round(window.innerWidth*Math.random())
+        let y = Math.round(window.innerHeight*Math.random())
+        document.getElementById("btNo").style.left= x + "px"
+        document.getElementById("btNo").style.top= y + "px"
+    }
+</script>
+</body>
+</html>
